@@ -12,7 +12,7 @@ public class Missile : MonoBehaviour
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _rigidbody2D.velocity += new Vector2( transform.up.x, transform.up.y)  * _maxSpeed;
+        _rigidbody2D.velocity += new Vector2( -transform.up.x, -transform.up.y)  * _maxSpeed;
     }
 
     public void ObtainDamage(float damage)

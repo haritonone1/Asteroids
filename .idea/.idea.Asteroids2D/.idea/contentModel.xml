@@ -4,9 +4,47 @@
     <e p="C:\Unity Projects\Asteroids2D" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="2D Space Kit" t="Include">
+          <e p="Background Elements" t="Include">
+            <e p="Planets" t="Include">
+              <e p="Planet Masks" t="Include">
+                <e p="Note.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Stars" t="Include">
+              <e p="Recolor Us!.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Backgrounds" t="Include">
+            <e p="Background Tip.txt" t="Include" />
+            <e p="Fantasy Purple 2048" t="Include">
+              <e p="Note.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Particles (Sprites)" t="Include">
+            <e p="Note on Flares.txt" t="Include" />
+          </e>
+          <e p="Readme.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="AimBeam.cs" t="Include" />
+            <e p="Crosshair.cs" t="Include" />
+            <e p="CustomPointer.cs" t="Include" />
+            <e p="ExampleShipControl.cs" t="Include" />
+            <e p="ParallaxLayer.cs" t="Include" />
+            <e p="PlayerControlledTurret.cs" t="Include" />
+            <e p="Projectile.cs" t="Include" />
+            <e p="PSDestroy.cs" t="Include" />
+            <e p="ShipCamera.cs" t="Include" />
+            <e p="WARNING.txt" t="Include" />
+          </e>
+          <e p="Ships and Stations" t="Include">
+            <e p="Rendering Tip.txt" t="Include" />
+          </e>
+        </e>
         <e p="_Project" t="Include">
           <e p="Scripts" t="Include">
             <e p="Asteroid.cs" t="Include" />
+            <e p="CameraController.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
             <e p="Missile.cs" t="Include" />
             <e p="Player.cs" t="Include" />
@@ -19,7 +57,7 @@
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
-    <e p="C:\Users\Hariton\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Hariton\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Asteroids2D.1182509434.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Hariton\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Hariton\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Asteroids2D.1182509434.00" t="ExcludeRecursive" />
   </component>
 </project>

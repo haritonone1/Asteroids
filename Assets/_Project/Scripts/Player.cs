@@ -21,7 +21,7 @@ public class Player : SpaceObject
         if (Input.GetKey(KeyCode.W))
         {
             var up = _transform.up;
-            _rigidbody2D.velocity += new Vector2(-up.x, -up.y) * Time.deltaTime * _flightSpeed;
+            _rigidbody2D.velocity += new Vector2(up.x, up.y) * Time.deltaTime * _flightSpeed;
         }
         
         if (Input.GetKey(KeyCode.A))
@@ -43,7 +43,7 @@ public class Player : SpaceObject
     private void CreateMissile()
     {
         var missile = Instantiate(_missilePrefab, transform);
-        missile.transform.localPosition = Vector3.zero;
+        missile.transform.position = _missileAppearingPosition.position;
         missile.transform.parent = null;
         missile.ObtainDamage(50f);
     }

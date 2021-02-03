@@ -17,7 +17,7 @@ public class Asteroid : SpaceObject
 
     private void CreateDuplicates()
     {
-        if (transform.localScale.x < 1f)
+        if (transform.localScale.x < .5f)
             return;
         
         var numberOfDuplicates = UnityEngine.Random.Range(2, 4);
