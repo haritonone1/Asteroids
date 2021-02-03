@@ -5,6 +5,8 @@ public class Player : SpaceObject
 {
     [SerializeField] private float _flightSpeed;
     [SerializeField] private float _rotationSpeed;
+    [SerializeField] private Transform _missileAppearingPosition;
+    [SerializeField] private Missile _missilePrefab;
     private Rigidbody2D _rigidbody2D;
     private Transform _transform;
     
@@ -31,6 +33,19 @@ public class Player : SpaceObject
         {
             transform.Rotate(new Vector3(0f,0f,-1f * _rotationSpeed));
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            CreateMissile();
+        }
+    }
+
+    private void CreateMissile()
+    {
+        var missile = Instantiate(_missilePrefab, transform);
+        missile.transform.localPosition = Vector3.zero;
+        missile.transform.parent = null;
+        missile.ObtainDamage(50f);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
