@@ -13,6 +13,7 @@ public class Missile : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.velocity += new Vector2( -transform.up.x, -transform.up.y)  * _maxSpeed;
+        Invoke(nameof(DestroyYourself),2f);
     }
 
     public void ObtainDamage(float damage)
@@ -29,5 +30,10 @@ public class Missile : MonoBehaviour
             spaceObject.TakeDamage(_damage);
             Destroy(gameObject);
         }
+    }
+
+    private void DestroyYourself()
+    {
+        Destroy(gameObject);
     }
 }

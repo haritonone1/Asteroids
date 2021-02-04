@@ -39,7 +39,7 @@ public class Player : SpaceObject
             CreateMissile();
         }
     }
-
+    
     private void CreateMissile()
     {
         var missile = Instantiate(_missilePrefab, transform);
@@ -59,6 +59,7 @@ public class Player : SpaceObject
 
     protected override void OnDie()
     {
+        Actions.OnFinish();
         Destroy(gameObject);
     }
 }
