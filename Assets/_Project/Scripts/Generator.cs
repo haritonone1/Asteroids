@@ -10,7 +10,7 @@ public class Generator : MonoBehaviour
     private Coroutine _generatorRoutine;
     private void Start()
     {
-        _generatorRoutine = StartCoroutine(nameof(Spawn));
+        _generatorRoutine = StartCoroutine(Spawn());
         Actions.OnFinish += OnFinish;
     }
 

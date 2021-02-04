@@ -11,11 +11,20 @@ public class Missile : MonoBehaviour
     
     private void Start()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-        _rigidbody2D.velocity += new Vector2( -transform.up.x, -transform.up.y)  * _maxSpeed;
         Invoke(nameof(DestroyYourself),2f);
     }
 
+    public void AddVelocity(Vector2 direction)
+    {
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _rigidbody2D.velocity += direction * _maxSpeed;
+    }
+
+    public void MakeDangerousForPlayer()
+    {
+        gameObject.layer = 11;
+    }
+    
     public void ObtainDamage(float damage)
     {
         _damage = damage;

@@ -44,6 +44,7 @@
         <e p="_Project" t="Include">
           <e p="Scripts" t="Include">
             <e p="Actions.cs" t="Include" />
+            <e p="Alien.cs" t="Include" />
             <e p="Asteroid.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
             <e p="GameController.cs" t="Include" />

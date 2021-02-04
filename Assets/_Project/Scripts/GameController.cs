@@ -4,15 +4,27 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+
+    public static GameController instance;
     
     [SerializeField] private Transform _playerTransform;
     private Camera _camera;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
         _camera = Camera.main;
     }
 
+    public Transform ReturnPlayer()
+    {
+        return _playerTransform;
+    }
+    
     private void ReturnPlayerIfIsOutOfCamera()
     {
         if (_playerTransform == null)

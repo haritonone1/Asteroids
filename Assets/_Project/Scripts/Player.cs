@@ -46,6 +46,7 @@ public class Player : SpaceObject
         missile.transform.position = _missileAppearingPosition.position;
         missile.transform.parent = null;
         missile.ObtainDamage(50f);
+        missile.AddVelocity(new Vector2( -missile.transform.up.x, -missile.transform.up.y));
     }
 
     private void OnCollisionEnter2D(Collision2D other)
