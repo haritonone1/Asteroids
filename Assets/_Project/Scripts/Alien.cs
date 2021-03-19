@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,8 +22,22 @@ public class Alien : SpaceObject
         Actions.OnFinish += StopShootRoutine;
         _playerTransform = GameController.instance.ReturnPlayer();
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _rigidbody2D.velocity = new Vector2(UnityEngine.Random.Range(-_maxSpeed,_maxSpeed),UnityEngine.Random.Range(-_maxSpeed,_maxSpeed));
+        // _rigidbody2D.velocity = new Vector2(UnityEngine.Random.Range(-_maxSpeed,_maxSpeed),UnityEngine.Random.Range(-_maxSpeed,_maxSpeed));
         _shootRoutine = StartCoroutine(Shoot());
+    }
+
+    public void MoveByWaypoints(List<Transform> _points)
+    {
+        Vector3[] positionsInSpace = new Vector3[_points.Count];
+        for (int i = 0; i < _points.Count; i++)
+        {
+            positionsInSpace[i] = _points[i].transform.position;
+        }
+        
+        transform.DOPath(positionsInSpace, 5f, PathType.Linear).onComplete = () =>
+        {
+            Destroy(gameObject);
+        };
     }
 
     private IEnumerator Shoot()

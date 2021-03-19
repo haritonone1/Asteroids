@@ -22,14 +22,9 @@
     <list default="true" id="f9563087-8973-439a-ad44-35c3df2707c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroids2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroids2D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroids2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroids2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Missile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Missile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/First.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/First.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Generator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Missile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Missile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Alien.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Alien.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,32 +43,26 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Generator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B1BD7821-A9BD-482C-8BEC-887040B89E43/f1/a24942ba/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/SpaceObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/SpaceObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B1BD7821-A9BD-482C-8BEC-887040B89E43/f1/a24942ba/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Generator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/GenerateByWaypoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Actions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/HoldButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Alien.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Actions.cs" />
       <option value="$PROJECT_DIR$/Assets/_Project/Scripts/GameController.cs" />
-      <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Generator.cs" />
       <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Missile.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Project/Scripts/HoldButton.cs" />
       <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Alien.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Project/Scripts/GenerateByWaypoints.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nxqKEuvFHk6rAqZSCwnZv8byW8" />
@@ -100,10 +89,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17316">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17316" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -121,7 +110,9 @@
       <workItem from="1612342030198" duration="5837000" />
       <workItem from="1612388926250" duration="894000" />
       <workItem from="1612431664320" duration="1842000" />
-      <workItem from="1612455289654" duration="5633000" />
+      <workItem from="1612455289654" duration="5685000" />
+      <workItem from="1616109727071" duration="2821000" />
+      <workItem from="1616136199128" duration="2625000" />
     </task>
     <servers />
   </component>
@@ -149,14 +140,7 @@
           <condition expression="other.gameObject.name == &quot;Asteroid&quot;" language="C#" />
           <url>file://$PROJECT_DIR$/Assets/_Project/Scripts/Missile.cs</url>
           <line>34</line>
-          <properties documentPath="C:\Unity Projects\Asteroids2D\Assets\_Project\Scripts\Missile.cs" initialLine="34" containingFunctionPresentation="method 'OnCollisionEnter2D'">
-            <startOffsets>
-              <option value="748" />
-            </startOffsets>
-            <endOffsets>
-              <option value="820" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Unity Projects\Asteroids2D\Assets\_Project\Scripts\Missile.cs" initialLine="34" containingFunctionPresentation="method 'OnCollisionEnter2D'" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
